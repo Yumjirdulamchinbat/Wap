@@ -1,7 +1,8 @@
 body {
 
     /* add background image */
-    background-image: url("../images/depositphotos_12760649-stock-photo-senior-lady-with-homemade-cake.jpeg");
+    background-image: url("./images/abc.jpeg");
+
     /* stop moving background image */
     background-attachment: fixed;
     font-family: Georgia, "Times New Roman", Times, serif;
