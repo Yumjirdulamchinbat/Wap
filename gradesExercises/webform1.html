@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retrieve Grade</title>
+    <style>
+        .title {
+            text-align: center;
+            /*garchig*/
+        }
+
+        .box {
+
+            width: 400px;
+            /*hureenii urt*/
+            border: 1px solid black;
+            padding: 10px 50px;
+            /*hurenii undur urt*/
+            margin: auto;
+            /*Hudulgunu*/
+
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            /*dotorh hudulgunu*/
+            justify-content: left;
+        }
+
+        input,
+        select {
+            margin: 20px 0;
+            /*hairtsagnii hemjee*/
+        }
+
+        label {
+            width: 200px;
+            /*usegnuudee shahna*/
+        }
+
+        body {
+            padding: 50px;
+            /*deed tolgoinoos dooshoo bolno*/
+        }
+
+        /* form {
+    display: flex;
+    flex-direction: column;
+} */
+
+        .memo {
+            font-size: small;
+            color: red;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Retrieve grade</h1>
+    <div class="box">
+        <form action>
+            <div class="row">
+                <label for>Name:</label>
+                <input type="text" name="Name" size="16" minlength="1" maxlength="16">
+            </div>
+            <div class="row">
+                <label for>Student ID:</label>
+                <input type="text" size="6">
+                <span class="memo">(must be 6-char length)</span>
+            </div>
+            <div class="row">
+                <label for>Assignment:</label>
+                <select name id>
+                    <option value>Assignment1</option>
+                    <option value>Assignment2</option>
+                    <option value>Assignment3</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for>Entry selection:</label>
+                <select name id>
+
+                    <option value="August2022">Aug2022</option>
+                    <option value="Septemer2022">Sep2022</option>
+                    <option value="October2022">Oct2022</option>
+                    <option value="November2022">Nov2022</option>
+                </select>
+            </div>
+
+            <input type="checkbox" value="agreed">
+            <label for>I agree that agreenment.</label>
+    </div>
+
+    <input type="submit" value="Get Grade!">
+    </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
