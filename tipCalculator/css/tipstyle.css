@@ -1,0 +1,17 @@
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2cm;
+}
+
+div {
+    margin: 5mm;
+
+}
+
+body,
+input,
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+}
