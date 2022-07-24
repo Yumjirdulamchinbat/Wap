@@ -1,9 +1,8 @@
 function changeIt() {
-    setInterval(changeTextArea, 500);
+    setInterval(changeTextarea, 500);
 }
 
 function makePig() {
-
 }
 
 function makeMalkovich() {
@@ -15,12 +14,14 @@ function makeMalkovich() {
         }
     }
 }
-function changeTextArea() {
+
+function changeTextarea() {
     var bigText = document.getElementById('big_text');
     var fontSize = parseInt(window.getComputedStyle(bigText).fontSize) + 2;
     bigText.style.fontSize = fontSize + "pt";
 }
-function chanegWeight(check) {
+
+function changeWeigth(check) {
     var bigText = document.getElementById('big_text');
     bigText.style.color = check.checked ? "#00FF00" : "#000";
     bigText.style.textDecoration = check.checked ? "underline" : "none";
@@ -28,5 +29,3 @@ function chanegWeight(check) {
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
 }
-
-
