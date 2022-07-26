@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css">
+    <title>Document</title>
+</head>
+<script>
+    accountList = [];
+    var AC = (function () {
+        var accountObj = {
+            accountName: " ",
+            deposit: 0,
+        };
+        let add = function (name, deposit) {
+            var newAcc = Object.create(accountObj);
+            newAcc.accName = name;
+            newAcc.deposit = deposit;
+
+            accountList.push(newAcc);
+
+        };
+
+        return {
+            addAccount: function (name, deposit) {
+                add(name, deposit);
+            },
+        };
+    })();
+
+    function createAccount() {
+        var accName = document.getElementById("account_name").value;
+        var deposit = documnet.getElementById("deposit").value;
+
+        AC.addAccount(accName, deposit);
+        document.getElementById("info").innerHTML = accountList.map((e) => "\nAccount name:" + e.accName + "Balance:" + e.deposit);
+        console.log(accountList);
+    }
+
+
+</script>
+
+<body>
+    <div>
+        <fieldset>
+            <legend> Bank of Yumjirdulam </legend>
+            <div class="bank-part">
+                <label for="account-Name">Account Name:</label>
+                <input type="text" id="name">
+                <br><br>
+                <label for="deposit"> Deposit:</label>
+                <input type="text" id="deposit">
+                <br><br>
+                <div class="part">
+                    <button id="create_acc" onclick="createAccount()">Create new account</button>
+                </div>
+                <textarea name="" id="info" cols="75"></textarea>
+            </div>
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
